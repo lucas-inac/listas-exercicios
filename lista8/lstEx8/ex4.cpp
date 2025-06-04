@@ -33,9 +33,8 @@ int filtraPares(int *V, int n) {
 int main() {
 
     int *V = NULL, *S = NULL;
-    int qnt, umInteiro, j = 0;
-
-    umInteiro = (int) sizeof(int);
+    int qnt, j = 0;
+    int umInteiro = (int) sizeof(int);
 
     printf("Tamanho do vetor: ");
     scanf("%d", &qnt);
@@ -48,7 +47,6 @@ int main() {
         printf("Erro de memoria!");
         return 1;
     }
-    
 
     for (int i = 0; i < qnt; i++)
     {
@@ -66,7 +64,7 @@ int main() {
     printf("Valores pares: ");
     for (int i = 0; i < j; i++)
     {
-        printf("%d ", S[i]);
+        printf("%d ", V[i]);
     }
     
     free(V);

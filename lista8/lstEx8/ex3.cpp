@@ -4,19 +4,18 @@
 int main() {
 
     int* vetor = NULL;
-    int x = 0, umInteiro, tam = 0;
-
-    umInteiro = (int) sizeof(int);
+    int x = 0, tam = 0;
+    int umInteiro = (int) sizeof(int);
 
     while (x != -1)
     {
         printf("%dº valor do vetor (digite -1 para parar): ", tam + 1);
         scanf("%d", &x);
-        getchar();
+
         if (x != -1)
         {
             tam++;
-            realloc(vetor, tam * umInteiro);
+            vetor = (int*) realloc(vetor, tam * umInteiro);
             vetor[tam - 1] = x;
         }
     }
