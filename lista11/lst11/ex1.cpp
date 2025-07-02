@@ -12,24 +12,24 @@ int main(int argc, char *argv[]) {
 
     int ini = atoi(argv[1]);
     int fim = atoi(argv[2]);
-    int primo;
+    bool primo;
 
     for (int i = ini; i < fim; i++)
     {
-        primo = 1;
+        primo = true;
         if (i <= 1) {
-            primo = 0;
+            primo = false;
         }
         else {
-            for (int j = 2; j < i && primo == 1; j++)
+            for (int j = 2; j < i && primo == true; j++)
             {
                 if (i % j == 0)
                 {
-                    primo = 0;
+                    primo = false;
                 }
             }
         }
-        if (primo == 1) {
+        if (primo == true) {
             printf("%d ", i);
         }
     }

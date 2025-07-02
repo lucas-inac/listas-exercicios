@@ -1,0 +1,4 @@
+3
+Cachorro Quente ---------- R$  8.50
+Hamburguer --------------- R$ 10.00
+Refrigerante ------------- R$  5.00
