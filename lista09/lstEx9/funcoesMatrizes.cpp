@@ -14,7 +14,7 @@ int **alocarMatriz(int linhas, int colunas) { //exercicio 6
 
     for (int i = 0; i < linhas; i++)
     {
-        matriz[i] = (int*) calloc(colunas, sizeof(int*));
+        matriz[i] = (int*) calloc(colunas, sizeof(int));
     }
     
     return matriz;
